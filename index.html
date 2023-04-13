@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="icon" href="img/programming.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio - Oscar Sanchez</title>
+</head>
+
+<body>
+    <!-- SECCION HEADER -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/Logo.png" alt="Logo de mi portafolio">
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" onclick="seleccionar(this)">Inicio</a>
+            <a href="#acerca" onclick="seleccionar(this)">Sobre mí</a>
+            <a href="#habilidades" onclick="seleccionar(this)">Habilidades</a>
+            <a href="#portfolio" onclick="seleccionar(this)">Portafolio</a>
+            <a href="#formacion" onclick="seleccionar(this)">Formacion</a>
+            <a href="#contacto" onclick="seleccionar(this)">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- SECCION HOME-->
+    <section class="home" id="home">
+        <div class="home-content" data-aos="slide-right" data-aos-duration="900">
+            <h3>Hola, Mi nombre es</h3>
+            <h1>Oscar Sanchez</h1>
+            <h3>Y soy <span>Desarrollador de Software</span></h3>
+            <p>Bienvenidos a mi portafolio, aca encontrarás ejemplos de mi trabajo, en los que podrás ver la calidad de
+                mi código y mi capacidad para adaptarme a diferentes entornos y tecnologías. Si tienes alguna pregunta o
+                deseas saber más acerca de mi trabajo, por favor no dudes en contactarme. ¡Gracias por visitar mi
+                portafolio!</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/oscarsanchez2830/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Chiki2830" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/chiki_2830/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/oscardaniel.sanchez.58" target="_blank"><i
+                        class='bx bxl-facebook'></i></a>
+            </div>
+            <a href="https://drive.google.com/uc?export=download&id=1vGdKfjin-B5cTgsrKfV7JclEVbw8oGhQ" download
+                class="btn">Descargar CV</a>
+
+
+        </div>
+        <div class="home-img">
+            <img src="img/foto.png" alt="" data-aos="slide-up" data-aos-duration="800">
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section class="acerca" id="acerca">
+        <div class="acerca-img">
+            <img src="img/foto2.png" alt="" data-aos="slide-right" data-aos-duration="800">
+        </div>
+
+        <div class="acerca-content" data-aos="zoom-in" data-aos-duration="900">
+            <h2 class="titulopp">Acerca <span>De mí</span></h2>
+            <h3>Software Developer</h3>
+            <p>Desarrollador de software apasionado por crear soluciones innovadoras y eficientes para los problemas
+                tecnológicos más desafiantes. Con una formación sólida en programación. Me encanta aprender cosas nuevas
+                y estar al tanto de las últimas tendencias en tecnología. Para mí, la programación es más que un
+                trabajo, es una pasión.</p>
+
+        </div>
+    </section>
+
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <section id="habilidades" class="habilidades">
+        <div class="contenedor_hab">
+            <h3 class="titulo-h aos-init aos-animate" data-aos="fade-up" data-aos-duration="400">HABILIDADES</h3>
+
+            <div class="tecnologias">
+
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-java"></i>
+                    <h3 class="titulo">JAVA</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-solid fa-database"></i>
+                    <h3 class="titulo">MYSQL</h3>
+                </div>
+
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class='bx bxl-spring-boot'></i>
+                    <h3 class="titulo">Spring Boot (Básico)</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3 class="titulo">GIT</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-right">
+                    <i class="fa-brands fa-github"></i>
+                    <h3 class="titulo">GITHUB</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3 class="titulo">HTML</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3 class="titulo">CSS</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-js"></i>
+                    <h3 class="titulo">JavaScript (Básico)</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio" class="portafolio">
+        <div class="contenedor_port">
+            <h3 class="titulo-p" data-aos="fade-up" data-aos-duration="400">PORTAFOLIO
+            </h3>
+
+            <div class="galeria" data-aos="zoom-in">
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto1.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Calculadora</h3>
+                            <p class="subt">Calculadora básica en JAVA</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/Calculadora" class="botonesia" target="_blank">Código <i
+                                class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto2.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">JUEGO DE LA SERPIENTE</h3>
+                            <p class="subt">Juego de la serpiente hecho en JAVA</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/JuegoSerpiente" class="botonesia" target="_blank">Código
+                            <i class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto3.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Tienda Oxxo</h3>
+                            <p class="subt">Programa de tienda Oxxo en Java que permite a los usuarios comprar productos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/TiendaOxxo" class="botonesia" target="_blank">Código <i
+                                class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto4.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Biblioteca</h3>
+                            <p class="subt">Simulación de biblioteca en Java y MySQL en el cual se implementan las
+                                operaciones básicas de creación, lectura, actualización y eliminación de registros de
+                                libros</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/Biblioteca" class="botonesia" target="_blank">Código <i
+                                class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto6.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Tienda de relojes</h3>
+                            <p class="subt">Página web de una tienda de relojes utilizando HTML, CSS y JavaScript para
+                                crear una interfaz atractiva y dinámica.</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/TiendaRelojes" class="botonesia" target="_blank">Código <i
+                                class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto7.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Juego de preguntas</h3>
+                            <p class="subt">Juego en HTML, CSS y JavaScript. La aplicación web desafía a los usuarios
+                                con una variedad de preguntas y opciones de respuesta, y ofrece una experiencia
+                                interactiva e informativa</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Chiki2830/JuegoPreguntas" class="botonesia" target="_blank">Código
+                            <i class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECCION FORMACION -->
+    <section id="formacion" class="formacion">
+        <div class="contenedor_form0">
+            <h3 class="titulo-ed" data-aos="fade-up" data-aos-duration="400">FORMACION</h3>
+
+            <div class="contenedor_form">
+                <div class="filas">
+                    <div class="izquierda" data-aos="flip-left">
+
+
+                        <h4 class="titulo">CURSO DE PROGRAMACIÓN BÁSICA</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2022</span>
+                        <p class="texto">Formacion en HTML, CSS y JavaScript
+                        </p>
+                        <a href="https://drive.google.com/file/d/1mXiPtMB9c_jA2JtzUArFw2lmbI-lwwZx/view?usp=share_link" target="_blank">
+                            Ver Certificado</a>
+
+                    </div>
+
+                    <div class="izquierda" data-aos="flip-left">
+                        <h4 class="titulo">DESARROLLO DE APLICACIONES CON INTERFAZ GRAFICA, MANEJO DE EVENTOS, CLASES Y
+                            OBJETOS</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje SENA</span>
+                        <span class="fecha">2022</span>
+                        <p class="texto">Desarrollo de conocimientos en Java</p>
+
+                        <a href="https://drive.google.com/file/d/11oI18kXbFers9rEo9-UiSAuZqAL9Gv-v/view?usp=share_link"
+                            target="_blank">Ver Certificado</a>
+                    </div>
+
+                </div>
+
+                <div class="filas-2">
+                    <div class="derecha" data-aos="flip-left">
+
+                        <h4 class="titulo">VARIABLES Y ESTRUCTURAS DE CONTROL EN LA PROGRAMACION ORIENTADA A OBJETOS
+                        </h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje SENA</span>
+                        <span class="fecha">2022</span>
+                        <p class="texto">Desarrollo de conocimientos en Java</p>
+
+                        <a href="https://drive.google.com/file/d/1Ty2WsQZXrHJ-q25PyrPVxdUr845qo3Ww/view?usp=share_link"
+                            target="_blank">Ver Certificado</a>
+                    </div>
+
+                    <div class="derecha" data-aos="flip-left">
+
+                        <h4 class="titulo">AUXILIAR EN OFIMATICA</h4>
+                        <span class="casa">Proyecto Tecnico Integral (PTI)</span>
+                        <span class="fecha">2018</span>
+                        <p class="texto">Adquisición de habilidades en ofimatica</p>
+
+                        <a href="https://drive.google.com/file/d/1wdpSpZuFQRGvEln5ZcAUc_RrGcXHaJHU/view?usp=share_link"
+                            target="_blank">ver Certificado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SECCTION C O N T A C T O -->
+    <section class="contact" id="contacto">
+        <h2 class="titulopp" data-aos="zoom-in">Contac<span>tame!</span></h2>
+        <form id="form">
+            <div data-aos="zoom-in">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre Completo" name="name" required>
+                    <input type="email" placeholder="Correo Electronico" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Numero de Celular" name="phone" required>
+                    <input type="text" placeholder="Asunto del Email" name="subject" required>
+                </div>
+                <textarea name="message" id="mesagge" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+                <input type="submit" id="button" value="Enviar Mensaje" class="btn">
+        </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('ehTm8TgV9ELSsquuA')
+        </script>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/oscarsanchez2830/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Chiki2830" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/chiki_2830/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/oscardaniel.sanchez.58" target="_blank"><i
+                    class='bx bxl-facebook'></i></a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.value = 'Enviando...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_tqh51bl';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Enviar Mensaje';
+                    alert('Mensaje Enviado Exitosamente');
+                }, (err) => {
+                    btn.value = 'Enviar Mensaje';
+                    alert(JSON.stringify(err));
+                });
+        });
+</script>
+
+</html>
