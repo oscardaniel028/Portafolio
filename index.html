@@ -21,9 +21,7 @@
 <body>
     <!-- SECCION HEADER -->
     <header class="header">
-        <a href="#" class="logo">
-            <img src="img/Logo.png" alt="Logo de mi portafolio">
-        </a>
+
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -32,7 +30,7 @@
             <a href="#acerca" onclick="seleccionar(this)">Sobre mí</a>
             <a href="#habilidades" onclick="seleccionar(this)">Habilidades</a>
             <a href="#portfolio" onclick="seleccionar(this)">Portafolio</a>
-            <a href="#formacion" onclick="seleccionar(this)">Formacion</a>
+            <!-- <a href="#formacion" onclick="seleccionar(this)">Formacion</a> -->
             <a href="#contacto" onclick="seleccionar(this)">Contacto</a>
         </nav>
     </header>
@@ -50,12 +48,12 @@
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/oscarsanchez2830/" target="_blank"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Chiki2830" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/oscardaniel028" target="_blank"><i class='bx bxl-github'></i></a>
                 <a href="https://www.instagram.com/chiki_2830/" target="_blank"><i class='bx bxl-instagram'></i></a>
                 <a href="https://www.facebook.com/oscardaniel.sanchez.58" target="_blank"><i
                         class='bx bxl-facebook'></i></a>
             </div>
-            <a href="https://drive.google.com/uc?export=download&id=1vGdKfjin-B5cTgsrKfV7JclEVbw8oGhQ" download
+            <a href="https://drive.google.com/uc?export=download&id=1oZ1FoAiOr6f681TZYFncdhgd0lVR0H6k" download
                 class="btn">Descargar CV</a>
 
 
@@ -90,19 +88,37 @@
 
             <div class="tecnologias">
 
+
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-cuttlefish"></i>
+                    <h3 class="titulo">C#</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-solid fa-computer"></i>
+                    <h3 class="titulo">.NET</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-angular"></i>
+                    <h3 class="titulo">ANGULAR</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3 class="titulo">Azure DevOps</h3>
+                </div>
                 <div class="tecnologia" data-aos="flip-left">
                     <i class="fa-brands fa-java"></i>
                     <h3 class="titulo">JAVA</h3>
                 </div>
                 <div class="tecnologia" data-aos="flip-left">
+                    <i class="fa-brands fa-python"></i>
+                    <h3 class="titulo">PYTHON</h3>
+                </div>
+                <div class="tecnologia" data-aos="flip-left">
                     <i class="fa-solid fa-database"></i>
-                    <h3 class="titulo">MYSQL</h3>
+                    <h3 class="titulo">SQL SERVER</h3>
                 </div>
 
-                <div class="tecnologia" data-aos="flip-left">
-                    <i class='bx bxl-spring-boot'></i>
-                    <h3 class="titulo">Spring Boot (Básico)</h3>
-                </div>
+
                 <div class="tecnologia" data-aos="flip-left">
                     <i class="fa-brands fa-git-alt"></i>
                     <h3 class="titulo">GIT</h3>
@@ -111,20 +127,10 @@
                     <i class="fa-brands fa-github"></i>
                     <h3 class="titulo">GITHUB</h3>
                 </div>
-                <div class="tecnologia" data-aos="flip-left">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3 class="titulo">HTML</h3>
-                </div>
-                <div class="tecnologia" data-aos="flip-left">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h3 class="titulo">CSS</h3>
-                </div>
-                <div class="tecnologia" data-aos="flip-left">
-                    <i class="fa-brands fa-js"></i>
-                    <h3 class="titulo">JavaScript (Básico)</h3>
-                </div>
 
             </div>
+
+        </div>
 
         </div>
     </section>
@@ -139,15 +145,36 @@
 
                 <div class="proyecto">
                     <div class="fotog">
-                        <img src="img/proyecto1.jpg" alt="">
+                        <img src="img/proyectoCrud.png" alt="">
                         <div class="overlay">
-                            <h3 class="titulo">Calculadora</h3>
-                            <p class="subt">Calculadora básica en JAVA</p>
+                            <h3 class="titulo">CRUD</h3>
+                            <p class="subt">Aplicación CRUD desarrollada con .NET y SQL Server, que permite gestionar
+                                usuarios, verificar su estado activo y visualizar su fecha de contrato en la base de
+                                datos.</p>
                         </div>
                     </div>
                     <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/Calculadora" class="botonesia" target="_blank">Código <i
-                                class="fa-solid fa-laptop-code"></i></a>
+                        <a href="https://github.com/oscardaniel028/AppCrud" class="botonesia" target="_blank">Código
+                            <i class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto1.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">APP CRUD USUARIOS</h3>
+                            <p class="subt">Este proyecto es una API RESTful desarrollada con .NET y SQL Server para
+                                administrar usuarios, permitiendo crear, consultar, actualizar y eliminar registros.
+                                Además, gestiona la autenticación con JWT. Su arquitectura en capas facilita su
+                                mantenimiento y expansión.</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/oscardaniel028/AppCrudUsuarios.Api" class="botonesia"
+                            target="_blank">Código <i class="fa-solid fa-laptop-code"></i></a>
 
                     </div>
 
@@ -155,14 +182,17 @@
 
                 <div class="proyecto">
                     <div class="fotog">
-                        <img src="img/proyecto2.jpg" alt="">
+                        <img src="img/proyecto7.png" alt="">
                         <div class="overlay">
-                            <h3 class="titulo">JUEGO DE LA SERPIENTE</h3>
-                            <p class="subt">Juego de la serpiente hecho en JAVA</p>
+                            <h3 class="titulo">GESTOR DE TAREAS</h3>
+                            <p class="subt">Aplicación web desarrollada con Angular que permite crear, marcar y eliminar
+                                tareas. Cuenta con uso de localStorage para guardar las
+                                tareas en el navegador, e interfaz construida con Bootstrap.</p>
                         </div>
                     </div>
                     <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/JuegoSerpiente" class="botonesia" target="_blank">Código
+                        <a href="https://github.com/oscardaniel028/App-Tareas" class="botonesia"
+                            target="_blank">Código
                             <i class="fa-solid fa-laptop-code"></i></a>
 
                     </div>
@@ -179,8 +209,8 @@
                         </div>
                     </div>
                     <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/TiendaOxxo" class="botonesia" target="_blank">Código <i
-                                class="fa-solid fa-laptop-code"></i></a>
+                        <a href="https://github.com/oscardaniel028/TiendaOxxo" class="botonesia" target="_blank">Código
+                            <i class="fa-solid fa-laptop-code"></i></a>
 
                     </div>
                 </div>
@@ -196,44 +226,29 @@
                         </div>
                     </div>
                     <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/Biblioteca" class="botonesia" target="_blank">Código <i
-                                class="fa-solid fa-laptop-code"></i></a>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <div class="fotog">
-                        <img src="img/proyecto6.jpg" alt="">
-                        <div class="overlay">
-                            <h3 class="titulo">Tienda de relojes</h3>
-                            <p class="subt">Página web de una tienda de relojes utilizando HTML, CSS y JavaScript para
-                                crear una interfaz atractiva y dinámica.</p>
-                        </div>
-                    </div>
-                    <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/TiendaRelojes" class="botonesia" target="_blank">Código <i
-                                class="fa-solid fa-laptop-code"></i></a>
-
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <div class="fotog">
-                        <img src="img/proyecto7.jpg" alt="">
-                        <div class="overlay">
-                            <h3 class="titulo">Juego de preguntas</h3>
-                            <p class="subt">Juego en HTML, CSS y JavaScript. La aplicación web desafía a los usuarios
-                                con una variedad de preguntas y opciones de respuesta, y ofrece una experiencia
-                                interactiva e informativa</p>
-                        </div>
-                    </div>
-                    <div class="botonesi">
-                        <a href="https://github.com/Chiki2830/JuegoPreguntas" class="botonesia" target="_blank">Código
+                        <a href="https://github.com/oscardaniel028/Biblioteca" class="botonesia" target="_blank">Código
                             <i class="fa-solid fa-laptop-code"></i></a>
 
                     </div>
                 </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyecto2.jpg" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">JUEGO DE LA SERPIENTE</h3>
+                            <p class="subt">Juego de la serpiente hecho en JAVA</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/oscardaniel028/JuegoSerpiente" class="botonesia"
+                            target="_blank">Código
+                            <i class="fa-solid fa-laptop-code"></i></a>
+
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
@@ -241,7 +256,7 @@
 
 
     <!-- SECCION FORMACION -->
-    <section id="formacion" class="formacion">
+    <!-- <section id="formacion" class="formacion">
         <div class="contenedor_form0">
             <h3 class="titulo-ed" data-aos="fade-up" data-aos-duration="400">FORMACION</h3>
 
@@ -255,7 +270,8 @@
                         <span class="fecha">2022</span>
                         <p class="texto">Formacion en HTML, CSS y JavaScript
                         </p>
-                        <a href="https://drive.google.com/file/d/1mXiPtMB9c_jA2JtzUArFw2lmbI-lwwZx/view?usp=share_link" target="_blank">
+                        <a href="https://drive.google.com/file/d/1mXiPtMB9c_jA2JtzUArFw2lmbI-lwwZx/view?usp=share_link"
+                            target="_blank">
                             Ver Certificado</a>
 
                     </div>
@@ -265,7 +281,7 @@
                             OBJETOS</h4>
                         <span class="casa">Servicio Nacional de Aprendizaje SENA</span>
                         <span class="fecha">2022</span>
-                        <p class="texto">Desarrollo de conocimientos en Java</p>
+                        <p class="texto">Desarrollo de conocimientos en desarrollo de software y arquitectura de aplicaciones</p>
 
                         <a href="https://drive.google.com/file/d/11oI18kXbFers9rEo9-UiSAuZqAL9Gv-v/view?usp=share_link"
                             target="_blank">Ver Certificado</a>
@@ -280,7 +296,7 @@
                         </h4>
                         <span class="casa">Servicio Nacional de Aprendizaje SENA</span>
                         <span class="fecha">2022</span>
-                        <p class="texto">Desarrollo de conocimientos en Java</p>
+                        <p class="texto">Desarrollo de conocimientos en desarrollo de software y arquitectura de aplicaciones</p>
 
                         <a href="https://drive.google.com/file/d/1Ty2WsQZXrHJ-q25PyrPVxdUr845qo3Ww/view?usp=share_link"
                             target="_blank">Ver Certificado</a>
@@ -300,7 +316,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- SECCTION C O N T A C T O -->
@@ -329,7 +345,7 @@
 
     <!-- SECCION FOOTER -->
     <footer>
-        <p>Todos los derechos reservados - 2023</p>
+        <p>Todos los derechos reservados - 2025</p>
         <div class="redes">
             <a href="https://www.linkedin.com/in/oscarsanchez2830/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/Chiki2830" target="_blank"><i class='bx bxl-github'></i></a>
